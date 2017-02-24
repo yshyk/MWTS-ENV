@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: MWTS-ENV
+  host: MWTS-ENV
+  disk_quota: 1024M
+  services:
+  - performance-monitoring-auto
+  - MWTS-ENV-cloudantNoSQLDB
